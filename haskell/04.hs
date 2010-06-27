@@ -1,3 +1,2 @@
-len         :: [a] -> Integer
-len []      = 0
-len (a:xs)  = 1 + len(xs)
+len :: [a] -> Integer
+len = foldr(\ x acc -> acc + 1) 0
